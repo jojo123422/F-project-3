@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+
+    <title>صاحب فكرة</title>
+<link rel="stylesheet" href="../CSS/useridea.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body dir="rtl">
+   
+
+   <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+          <span></span>
+      </label>
+      <ul class="menu__box">
+          <li><a class="menu__item" href="../html/useridea.html"> الرئيسية</a></li>
+          <li><a class="menu__item" href="../html/create.html">اطرح فكرة </a></li>
+          <li><a class="menu__item" href="../html/profile.html">صفحتي</a></li>
+          <li><button id="signout" onclick="back()">تسجيل خروج</button></li>
+      </ul>
+  </div>
+  
+
+             
+            <!-- //////////////////////////// -->
+  <section id="heading"> 
+     <h1>اهلا و سهلاً,<br>بأصحاب العقول المبدعة و الأفكار الواعدة</h1>
+</section>
+<section class="first-infobox">
+   <div class="info-box1">
+      <div class="info-item1">
+          <h3>عدد الافكار حاليا في المزاد</h3>
+          <p class="number1" data-target="41">0</p>
+      </div>
+      <div class="info-item1">
+          <h3>نسبة نجاح البيع</h3>
+          <p >87%</p>
+      </div>
+      <div class="info-item1">
+          <h3>عدد الافكار كله</h3>
+          <p class="number1" data-target="3120">0</p>
+      </div>
+  </div>
+</section>
+<section class="mid">
+<section id="cards-section">
+          <h2>الالية</h2>
+          <div class="card-row">
+            <div class="card">تسجيل الدخول كاصاحب فكرة</div>
+            <div class="card">طرح فكرتك في مزادنا</div>
+          </div>
+          <div class="card-row">
+            <div class="card">ترقب نتيجة المزاد</div>
+            <div class="card">وهنا نهاية رحلتك معنا, انطلق انت و مستثمرك في مشروعكم و فالكم التوفيق!</div>
+          </div>
+          <h2>شروط طرح الفكرة</h2>
+          <div class="card-row">
+            <div class="card">امتلاك حقوق ملكية فكرية على فكرته التي يود طرحها</div>
+            <div class="card">الجدية في اكمال المشروع مع الإدراك بقوانيننا و شروطنا
+                حيث سيتم اخذ نسبة من ارباح المزاد بمقدار 5%
+            </div>
+          </div>
+        </section>
+</section>
+
+<div class="info-box">
+    <div class="info-header">
+        <h3>بعض التعليمات الهامة</h3>
+    </div>
+    <div class="info-container">
+        <div class="info-item">
+            <div class="box-heading">
+            <h3>البلاد ذات أكبر عدد من البراءات</h3>
+        </div >
+            <p> - الصين <span class="number" data-target="1500000">0</span> </p>
+            <p> - الولايات المتحدة الأمريكية<span class="number" data-target="1400000">0</span></p>
+            <p>- اليابان<span class="number" data-target="1300000">0</span> </p>
+        </div>
+        <div class="info-item">
+            <div class="box-heading">
+                    <h3>أسرع موافقة على البراءة</h3>
+            </div>
+            <p> - أستراليا<span class="number" data-target="365">0</span> يوم</p>
+            <p>  - كندا<span class="number" data-target="359">0</span>يوم</p>
+            <p> - المملكة المتحدة<span class="number" data-target="90">0</span>يوم</p>
+        </div>
+        <div class="info-item">
+            <div class="box-heading">
+                <center><h3>أكبر عدد من البراءات الممنوحة للمتقدمين الأجانب</h3></center>
+            </div>
+            <p> - الولايات المتحدة الأمريكية<span class="number" data-target="500000">0</span></p>
+            <p> - الصين<span class="number" data-target="480000">0</span></p>
+            <p>- ألمانيا<span class="number" data-target="450000">0</span></p>
+        </div>
+        <div class="info-item">
+            <div class="box-heading">
+                    <h3>أكثر البراءات تأثيرًا</h3>
+            </div>
+            <p> - الولايات المتحدة الأمريكية<span class="number" data-target="2500">0</span></p>
+            <p> - ألمانيا<span class="number" data-target="2450">0</span></p>
+            <p>- اليابان<span class="number" data-target="2400">0</span> </p>
+        </div>
+        <p>الاعداد تقريبية من سنة 2022</p>
+
+    </div>
+   </div>
+<section class="library">
+    <h2>تعرَف على نشاطات الدول في مجال الملكية الفكرية</h2>
+   <input type="text" id="search" placeholder="ابحث عن دولة...">
+    <div id="results"></div>
+</section>
+
+
+
+
+    <footer class="footer" >
+      
+        <div class="subscribe" >
+            <h2>اشترك في نشرتنا الأن</h2>
+            <input type="name" name="text" class="box1" placeholder="الأسم" style="width: 100%; height: 25px; border-radius: 10px 0px; margin-bottom: 2%;">
+            <input type="email" name="text" class="box2"placeholder="البريد الإلكتروني" style="width: 100%; height: 25px; border-radius: 10px 0px;margin-bottom: 2%;">
+            <button class="button2" style=" border-radius: 10px 0px; font-size: medium; width: 60px; height: 32px;padding: 8px; width: 66px; ">اشترك</button>
+        </div>
+        <div class="qoute" style="margin-top: 88px; color: #ce7d5a;">
+            <h1>فرص تكتمل بها دائرتك</h1>
+            <h2 >مع زَاوِد</h2>
+        </div>
+        <div class="footer-part">
+            <ul class="list1" style="margin-top: 55px;">
+                <li style=" margin-bottom: 10px;"><a href="">الرئيسية</a></li>
+                <li style=" margin-bottom: 10px;"><a href="">المزاد</a></li>
+                <li style=" margin-bottom: 10px;"><a href="./FAQ.HTML">الأسئلة الشائعة</a></li>
+                <li style=" margin-bottom: 10px;"><a href="./aboutus.html">من نحن؟</a></li>
+            </ul>
+            <ul class="list2">
+            
+        
+            <ul class="list3">
+                <li style=" margin-bottom: 10px; color:rgb(254, 249, 251);  font-size: 1.1rem; margin-top: 88px;">خلنا نتتواصل !</li>
+                <li style=" margin-bottom: 10px; color: rgb(220, 220, 220);"> <i class="fa-brands fa-square-twitter fa-2x"></i>
+                <li style=" margin-bottom: 10px;color: rgb(220, 220, 220);"><i class="fa-brands fa-square-github fa-2x"></i></li>
+                <li style=" margin-bottom: 10px;color: rgb(220, 220, 220);"><i class="fa-brands fa-square-instagram fa-2x"></i></li>
+            </ul>
+       
+        </div>
+
+    </footer>
+    <script>
+        back = ()=>{
+            window.location.href = "./main.html";        }
+    </script>
+
+   
+      
+    
+    <script src="../JS/useridea.js"></script>
+</body>
+</html>

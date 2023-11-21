@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=REM&family=Tajawal:wght@300&display=swap');
+body{
+  font-family: 'REM', sans-serif;
+  font-family: 'Tajawal', sans-serif;
+  background-color: #D8D8D6;
+}
+h1{
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 5%;
+  color: #2F5D8C;
+  margin-bottom: 8%;
+  font-family: 'REM', sans-serif;
+  font-family: 'Tajawal', sans-serif;
+}
+#data-list{
+  margin-left: 50%;
+}
+.card {
+   margin-right: 54%;
+    width: 600px;
+    border-radius: 1rem;
+    background-color: #F9F9F9;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+  
+  .infos {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 2rem;
+    gap: 1rem;
+    margin-bottom: 30px;
+}
+  
+  
+  .info {
+    height: 7rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  #idea_name {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    color: #2F5D8C;
+  }
+  
+  #idea_description {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 600;
+  }
+  #idea_patentType{
+    font-weight: 700;
+    color: #D55E2D;
+
+  }
+  .stats {
+    width: 97%;
+    border-radius: 0.5rem;
+    background-color: #D8D8D6;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: rgba(0, 0, 0, 1);
+  }
+  
+  .flex {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 4px;
+  }
+  
+  .state-value {
+    font-weight: 700;
+    color: #D55E2D;
+  }
+  
+  #request {
+    margin-top: 1.5rem;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #fff;
+    background-color: #2F5D8C;
+    transition: all .3s ease;
+    font-family: 'REM', sans-serif;
+    font-family: 'Tajawal', sans-serif;
+  }
+  
+  #request:hover {
+    background-color: #406891;
+    color: #fff;
+    transition: .2s;
+  }
+  .container{
+  display: flex;
+  }
+  #box{
+   margin-top: 1.5rem;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    transition: all .3s ease;
+    margin-left: 5px;
+    font-family: 'REM', sans-serif;
+    font-family: 'Tajawal', sans-serif;
+  }
+
+  .theAuction{
+    margin-right: 25.5%;
+  }
+  ul li{
+    list-style: none;
+  }
+  .auction{
+    width: 630px;
+    height: 60px;
+    background: #F9F9F9;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 10px;
+  }
+  
+  .icon{
+    margin-left: 10px;
+  }
+  
+  
+  .textBox {
+    width: calc(100% - 90px);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .textContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .span {
+    font-size: 13px;
+    font-family: 'REM', sans-serif;
+    font-family: 'Tajawal', sans-serif;
+  }
+  
+  .h1 {
+    font-size: 16px;
+    font-family: 'REM', sans-serif;
+    font-family: 'Tajawal', sans-serif;
+    
+  }
+  
+  
+  
+  

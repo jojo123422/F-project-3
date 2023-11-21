@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرئيسية</title>
+    <link rel="stylesheet" href="../css/main.css">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+
+<body dir="rtl">
+
+    
+    <!-- <header signingup language button>> -->
+    <header>
+        <img src="../photo/fb6df2e2-2961-4f87-8ae7-6559ab66d03d (1).jpg" style="margin-top: 99p; height: 72px; margin-bottom: 66px; width: 80px; margin-right: 660px;">
+        <!-- img -->
+      
+        <img src="" style="margin-bottom:88px;">
+ 
+<!-- signingup -->
+  
+    
+    <div class="text" style="margin-top: -2px; margin-top: 150px;">
+        <p>نحتضن مشاريعكم للوصول الى الفرص الإستثمارية بأسرع وأسهل الطرق ...</p>
+       
+        
+     </div>
+</header>
+
+ <!-- nav items -->
+ <nav >
+     
+    
+    <ul>
+       <li><a href="../html/main.html"> الرئيسية</a></li>
+       <li><a href="../html/mainAuction.html"> المزاد</a></li>
+  
+    </ul>
+
+</nav>
+
+
+
+
+<!-- //////////////////////////// -->
+
+
+<div class="signingup" dir="ltr">
+    <div class="button8">
+
+    <button onclick="signin()"><b>إنشاء حساب</b></button>
+</div>
+<div class="button10">
+    <button onclick="login()"><b>تسجيل دخول</b></button>
+</div>
+</div>
+
+<div class="img body" dir="ltr" style="margin-top: 50px; border-radius: 200px; margin-left: 60px;">
+    <img src="../photo/9499776.png" alt="">
+    </div>
+
+   
+<hr>
+<!-- //////////////////////مكان الرؤيه///////////////////// -->
+<hr>
+</div>
+<!-- //////////////////////////// -->
+
+<div class="now">
+<h1>الأبرز الأن في مزادنا</h1>
+
+<br>
+<br>
+<br>
+<div id="data-list">
+    <tr>
+        <td>
+            <div class="card-container">
+                <div class="card">
+                <h3 class="card__title">حاضِر</h3>
+                   <div class="card__date">الوقت المتبقي: 2 يوم , 10 ساعات</div>
+                       <div class="card__arrow">
+                           <button id="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                                <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                                </svg>
+                           </button> 
+                        </div>
+                </div>
+               
+            </div>
+         </td>
+    </tr>
+    <!-- /////////////////////// -->
+    <tr>
+        <td>
+            <div class="card-container">
+                <div class="card">
+                <h3 class="card__title">تل باي</h3>
+                   <div class="card__date">الوقت المتبقي: 2 يوم , 10 ساعات</div>
+                       <div class="card__arrow">
+                           <button id="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                                <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                                </svg>
+                           </button> 
+                        </div>
+                </div>
+               
+            </div>
+         </td>
+    </tr>
+    <!-- ///////////////// -->
+    <tr>
+        <td>
+            <div class="card-container">
+                <div class="card">
+                <h3 class="card__title">مشروع هجرة</h3>
+                   <div class="card__date">الوقت المتبقي: 2 يوم , 10 ساعات</div>
+                       <div class="card__arrow">
+                           <button id="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                                <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                                </svg>
+                           </button> 
+                        </div>
+                </div>
+               
+            </div>
+         </td>
+    </tr>
+    <!-- //////////// -->
+    <tr>
+        <td>
+            <div class="card-container">
+                <div class="card">
+                <h3 class="card__title">صمّـاء</h3>
+                   <div class="card__date">الوقت المتبقي: 2 يوم , 10 ساعات</div>
+                       <div class="card__arrow">
+                           <button id="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                                <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                                </svg>
+                           </button> 
+                        </div>
+                </div>
+               
+            </div>
+         </td>
+    </tr>
+</div>
+</div>
+
+
+<div id="data-list"></div>
+
+<!-- ////////////////services//////////////////// -->
+
+<div class="services">
+        
+    <h1 id="services-heading" style=" color:#2F5D8C;">من هم المستفيدون من خدماتنا؟</h1>
+</div>
+
+<!-- Card -->
+
+<main class="main2">
+  
+    <div class="card2">
+        
+        <h3>أصحاب افكار المشاريع الناشئة</h3>
+    <hr>
+    <h2>أي شخص يمتلك فكرة لمشروع واعد ولديه ملكية فكرية.</h2>
+    </div>
+    </div>
+ 
+    
+    <div class="card2">
+       
+        <h3>المستثمرون</h3>
+     <hr>
+    <h2>أي مستثمر يبحث عن افكار مشاريع للاستثمار فيها .</h2>
+    </div>
+</main>
+
+<div class="button77">
+    <button>أنشئ حساب الأن !</button>
+
+</div>
+
+
+
+
+  
+
+
+<!-- ///////////////////////////////////// -->
+
+
+<!-- ///////////////////////////// -->
+
+<div class="services-card-container">
+
+    <div class="service-card">
+        <i class="" style="margin-bottom: 20px;"></i>
+        <p></p>
+    </div>
+    <div class="service-card">
+        <i class="" style="margin-bottom: 20px;"></i>
+        <p></p>
+    </div>
+    <div class="service-card">
+        <i class="" style="margin-bottom: 20px;"></i>
+        <p></p>
+    </div>
+    </div>
+</div>
+<!-- مستثمر -->
+
+<!-- ظظظظظظظظ -->
+
+
+
+    <!-- Footer -->
+    <footer class="footer" >
+      
+        <div class="subscribe" >
+            <h2>اشترك في نشرتنا الأن</h2>
+            <input type="name" name="text" class="box1" placeholder="الأسم" style="width: 100%; height: 25px; border-radius: 10px 0px; margin-bottom: 2%;">
+            <input type="email" name="text" class="box2"placeholder="البريد الإلكتروني" style="width: 100%; height: 25px; border-radius: 10px 0px;margin-bottom: 2%;">
+            <button class="button2" style=" border-radius: 10px 0px; font-size: medium; width: 60px; height: 32px;padding: 8px; width: 66px; ">اشترك</button>
+        </div>
+        <div class="qoute" style="margin-top: 88px; color: #ce7d5a;">
+            <h1>فرص تكتمل بها دائرتك</h1>
+            <h2 style="margin-left: 100px; margin-top:- 400px;">مع زَاوِد</h2>
+        </div>
+        <div class="footer-part">
+            <ul class="list1" style="margin-top: 55px;">
+                <li style=" margin-bottom: 10px;"><a href="">الرئيسية</a></li>
+                <li style=" margin-bottom: 10px;"><a href="">المزاد</a></li>
+                <li style=" margin-bottom: 10px;"><a href="../html/FAQ.html">الأسئلة الشائعة</a></li>
+                <li style=" margin-bottom: 10px;"><a href="../html/aboutUs.html">من نحن؟</a></li>
+            </ul>
+            <ul class="list2">
+            
+        
+            <ul class="list3">
+                <li style=" margin-bottom: 10px; color:rgb(254, 249, 251);  font-size: 1.1rem; margin-top: 88px;">خلنا نتتواصل !</li>
+                <li style=" margin-bottom: 10px; color: rgb(220, 220, 220);"> <i class="fa-brands fa-square-twitter fa-2x"></i>
+                <li style=" margin-bottom: 10px;color: rgb(220, 220, 220);"><i class="fa-brands fa-square-github fa-2x"></i></li>
+                <li style=" margin-bottom: 10px;color: rgb(220, 220, 220);"><i class="fa-brands fa-square-instagram fa-2x"></i></li>
+            </ul>
+       
+        </div>
+
+    </footer>
+    <!-- /////////////////////////////////////////// -->
+<script>
+    signin=()=>{
+        window.location.href = "./signin.html";
+    }
+    login = () => {
+        window.location.href = "./login.html";
+
+    }
+</script>
+
+  
+   
+
+</body>
+</html>

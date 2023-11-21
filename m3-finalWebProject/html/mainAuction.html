@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المزاد</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="../css/mainAuction.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body dir="rtl">
+     <!-- <header signingup language button>> -->
+        <header>
+            <img src="../photo/fb6df2e2-2961-4f87-8ae7-6559ab66d03d (1).jpg" style="margin-top: 99p; height: 72px; margin-bottom: 66px; width: 80px; margin-right: 660px;">
+            <!-- img -->
+          
+            <img src="" style="margin-bottom:88px;">
+     
+    <!-- signingup -->
+      
+    </header>
+    
+     <!-- nav items -->
+     <nav >
+         
+        
+        <ul>
+           <li><a href="../html/main.html"> الرئيسية</a></li>
+           <li><a href="../html/mainAuction.html"> المزاد</a></li>
+      
+        </ul>
+    
+    </nav>
+    
+    
+    
+    
+    <!-- //////////////////////////// -->
+    
+    
+    <div class="signingup" dir="ltr">
+        <div class="button8">
+    
+        <button onclick="signin()"><b>إنشاء حساب</b></button>
+    </div>
+    <div class="button10">
+        <button onclick="login()"><b>تسجيل دخول</b></button>
+    </div>
+    </div>
+    <h1>مزاد زَاوِد</h1>
+    <h2>هو مزاد يتم طرح أفكار مشاريع هادفة وواعدة ليتم المزايدة عليها من قبل المستثمرين.</h2>
+    <br><br><br>
+    <h1>ابدأ مزايدتك على الأفكار بكل سهولة </h1>
+    <h2>تعرف على خطوات المزايدة وزايد من مكانك الأن </h2>
+<br><br><br>
+<div class="container">
+    <div class="card2"><h2>1 </h2>
+      <p>تسجيل الدخول كمستثمر</p>
+    </div>
+    <div class="card2" style="margin-right: 40px;"><h2>2 </h2>
+      <p>ابدأ في المزايدة</p>
+    </div>
+   </div>
+    
+    <div id="data-list"></div>
+    <!-- Footer -->
+    <footer class="footer" >
+      
+        <div class="subscribe" >
+            <h2>اشترك في نشرتنا الأن</h2>
+            <input type="name" name="text" class="box1" placeholder="الأسم" style="width: 100%; height: 25px; border-radius: 10px 0px; margin-bottom: 2%;">
+            <input type="email" name="text" class="box2"placeholder="البريد الإلكتروني" style="width: 100%; height: 25px; border-radius: 10px 0px;margin-bottom: 2%;">
+            <button class="button2" style=" border-radius: 10px 0px; font-size: medium; width: 60px; height: 32px;padding: 8px; width: 66px; ">اشترك</button>
+        </div>
+        <div class="qoute" style="margin-top: 88px; color: #ce7d5a;">
+            <h1 class="text"style="color: ce7d5a;">فرص تكتمل بها دائرتك</h1>
+            <h2 >مع زَاوِد</h2>
+        </div>
+        <div class="footer-part">
+            <ul class="list1" style="margin-top: 55px;">
+                <li style=" margin-bottom: 10px;"><a href="">الرئيسية</a></li>
+                <li style=" margin-bottom: 10px;"><a href="">المزاد</a></li>
+                <li style=" margin-bottom: 10px;"><a href="./FAQ.HTML">الأسئلة الشائعة</a></li>
+                <li style=" margin-bottom: 10px;"><a href="./aboutus.html">من نحن؟</a></li>
+            </ul>
+            <ul class="list2">
+            
+        
+            <ul class="list3">
+                <li style=" margin-bottom: 10px; color:rgb(254, 249, 251);  font-size: 1.1rem; margin-top: 88px;">خلنا نتتواصل !</li>
+                <li style=" margin-bottom: 10px; color: rgb(220, 220, 220);"> <i class="fa-brands fa-square-twitter fa-2x"></i>
+                <li style=" margin-bottom: 10px;color: rgb(220, 220, 220);"><i class="fa-brands fa-square-github fa-2x"></i></li>
+                <li style=" margin-bottom: 10px;color: rgb(220, 220, 220);"><i class="fa-brands fa-square-instagram fa-2x"></i></li>
+            </ul>
+       
+        </div>
+
+    </footer>
+    <!-- /////////////////////////////////////////// -->
+    <script>
+        signin=()=>{
+            window.location.href = "./signin.html";
+        }
+        login = () => {
+            window.location.href = "./login.html";
+    
+        }
+    </script>
+    
+    <script src="../js/mainAuction.js"></script>
+</body>
+</html>

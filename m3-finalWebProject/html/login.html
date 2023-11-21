@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body dir="rtl">
+    <div class="container">
+        
+            <h2>تسجيل دخول</h2>
+            <input type="text" name="username" class="box"
+            placeholder="اسم المستخدم" id="username">
+            <input type="password" name="Password" class="box"
+            placeholder="كلمة المرور" id="password">
+            <input type="submit"  class="login"value="تسجيل دخول" id="submit" onclick="check()"><br><br>
+            <br>
+            <div class="icons">
+              <i class="fa-brands fa-google fa-2x"></i>
+              <i class="fa-brands fa-twitter fa-2x"></i>
+              <i class="fa-brands fa-github fa-2x"></i>
+            </div> 
+    </div>
+    <script>
+const check = () => {
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+
+  axios.get("https://64fdc847596493f7af7e8fc1.mockapi.io/api/v1/m3-users")
+    .then(function (response) {
+      const userData = response.data.find(user => user.username === username && user.password === password);
+
+      if (userData) {
+        if (userData.selecttype === "حساب طارح فكرة") {
+          window.location.href = "./useridea.html";
+        } else if (userData.selecttype === "حساب مستثمر") {
+          window.location.href = "./auction-of-investor.html";
+        } 
+      } else {
+        Swal.fire({
+          position: "top-end",
+          icon: "warning",
+          title: "تأكد من الاسم أو الباسورد",
+          showConfirmButton: false,
+          timer: 3000,
+        });
+      }
+    })
+    .catch(function (error) {
+      console.error("error", error);
+      Swal.fire({
+        position: "top-end",
+        icon: "error",
+        title: "خطأ في الاتصال بالخادم",
+        showConfirmButton: false,
+        timer: 3000,
+      });
+    });
+};
+
+    </script>
+</body>
+</html>

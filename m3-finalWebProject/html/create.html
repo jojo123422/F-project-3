@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>اطرح فكرة</title>
+          <link rel="stylesheet" href="../css/create.css">
+          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body dir="rtl">
+          <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+                    <ul class="menu__box">
+                        <li><a class="menu__item" href="../html/useridea.html"> الرئيسية</a></li>
+                        <li><a class="menu__item" href="./create.html">اطرح فكرة </a></li>
+                        <li><a class="menu__item" href="./profile.html">صفحتي</a></li>
+                        <li><button id="signout">تسجيل خروج</button></li>
+                    </ul>
+                </div>
+                <h1>احلامك تقدر تتغير من مجرد فكرة إلى مشروع امامك!</h1>
+
+          <form id="idea-form">
+                    <div class="form">
+                        
+                       <div class="modal">
+                          <div class="modal__header">
+                            
+                             <span class="modal__title">اطرح فكرتك الأن</span>
+                                   <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                   <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg></button>
+                          </div>
+                          <div class="modal__body">
+                                  <div class="input">
+                                            <label class="input__label">اسم الفكرة </label>
+                                            <input class="name" name="name" type="text"> 
+                                        </div>
+                                        <div class="input">
+                                            <label class="input__label">نبذة الفكرة</label>
+                                            <textarea class="description" name="description"></textarea>
+                                            <p class="input__description">أعط مشروعك وصفًا جيدًا حتى يعرف الجميع الهدف منه</p>
+                                        </div><br>  
+                                        
+              
+                                            <div>
+                                                      <label for="patentType">اختر نوع الملكية الفكرية:</label>
+                                                      <input type="radio" id="utility" name="patentType" value="utility"style="margin-right: 5px;" >
+                                                      <label for="utility" style="margin-right: 5px;">Utility</label>
+                                                      <input type="radio" id="design" name="patentType" value="design"style="margin-right: 5px;">
+                                                      <label for="design" style="margin-right: 5px;">Design</label>
+                                                      <input type="radio" id="plant" name="patentType" value="plant"style="margin-right: 5px;">
+                                                      <label for="plant" style="margin-right: 5px;">Plant</label>
+                                                    </div><br> 
+                                        
+              
+              
+              
+                             <label>اختر بلد الملكية الفكرية: </label><br>               
+              
+                             <input type="text" id="countrySearch" placeholder="ابحث عن دولة  ">
+              
+                         <div id="patentcountries"> </div>
+              
+                    
+                      
+                             <div id="selectedCountries"></div><br>
+                          </div>
+                          <div class="modal__footer">
+                             <div class="modal__footer">
+                                <button class="button button--primary" type="submit" onclick="show()">اطرح فكرتك في المزاد الان</button>
+                            </div>
+        </form>
+           <script>
+            show=()=>{
+                Swal.fire({
+              position: "center",
+          icon: "sucess",
+          title: "تمت إضافة فكرتك بنجاح!",
+          showConfirmButton: false,
+          timer: 3000,
+        });
+
+            }
+           </script>             
+                    
+          <script src="../js/create.js"></script>
+</body>
+</html>

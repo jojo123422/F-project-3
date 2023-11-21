@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب</title>
+    <link rel="stylesheet" href="../css/signin.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body dir="rtl">
+    <div class="container">
+            <h2>إنشاء حساب</h2>
+            <input type="text" name="username" class="box"
+            placeholder="اسم المستخدم" id="username">
+            <input type="email" name="email" class="box"
+            placeholder="البريد الالكتروني" id="email">
+            <input type="number" name="phone_num" class="box"
+            placeholder="رقم الهاتف" id="phone_num">
+            <input type="password" name="Password" class="box"
+            placeholder="كلمة المرور" id="password">
+            <div id="user_type">
+                <h3>اختر نوع الحساب :</h3>
+                <select id="selecttype">
+                    <option>حساب مستثمر</option>
+                    <option>حساب طارح فكرة</option>
+                </select>
+            </div>
+            <button id="submit"  onclick="adding()"> إنشاء حساب</button>
+            <a href="#">نسيت كلمة المرور؟</a>
+    </div>
+
+    <script>
+            const adding = () => {
+            const username= document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const phonenum = document.getElementById('phone_num').value;
+            const password = document.getElementById('password').value;
+            const selecttype = document.getElementById('selecttype').value;
+
+            const datauser = { username, email, phonenum, selecttype, password};
+            axios.post("https://64fdc847596493f7af7e8fc1.mockapi.io/api/v1/m3-users", datauser).then((response) => {
+                window.location.href = './login.html'
+                console.log("تمت الاضافة");   
+            });  
+        }
+    </script>
+</body>
+</html>

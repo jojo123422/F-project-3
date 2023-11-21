@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=REM&family=Tajawal:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'REM', sans-serif;
+  font-family: 'Tajawal', sans-serif;
+  background-color:#F9F9F9;
+}
+/* / *container* / */
+.container{
+  display: flex;
+  height: 620px;
+  width: 30%;
+  border: 1px solid #2F5D8C;
+  margin: auto;
+  margin-top: calc(6%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  background-color: #2F5D8C;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+h2{
+  font-size: 2.5rem;
+  margin: calc(8%);
+  color:  #F9F9F9;
+  font-family: 'REM', sans-serif;
+  font-family: 'Tajawal', sans-serif;
+}
+.box{
+  padding: 12px;
+  width: 65%;
+  margin: 15px;
+  border: 1px solid #2F5D8C;
+  outline: none;
+  border-radius: 10px;
+  font-family: 'REM', sans-serif;
+  font-family: 'Tajawal', sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+#submit{
+  padding: 12px 30px;
+  width: 40%;
+  margin-top: 40px;
+  text-align: center;
+  background-color:#D8D8D6;
+  color: #2F5D8C;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  font-family: 'REM', sans-serif;
+  font-family: 'Tajawal', sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#submit:hover{
+  transform: scale(1.09);
+  transition: .3s;
+}
+a{
+  font-family: 'REM', sans-serif;
+  font-family: 'Tajawal', sans-serif;
+  text-decoration: none;
+  color: #ADB3C1;
+  margin-top: 20px;
+  cursor: pointer;
+  
+}   
+ a:hover{
+
+  text-decoration: underline;
+  transition: .2s;
+}
+
+
+
+
+#user_type{
+  display: flex;
+  justify-content: flex-start;
+}
+#selecttype{
+  border-radius: 5px;
+  width: calc(9%);
+  color: #2F5D8C;
+  font-family: 'REM', sans-serif;
+  font-family: 'Tajawal', sans-serif; 
+}
+
+
+
+h3{
+ color: #D8D8D6;
+  font-family: 'REM', sans-serif;
+  font-family: 'Tajawal', sans-serif;
+}
+

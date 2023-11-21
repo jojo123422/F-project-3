@@ -1,0 +1,249 @@
+
+@import url('https://fonts.googleapis.com/css2?family=REM&family=Tajawal:wght@300&display=swap');
+body{
+  font-family: 'REM', sans-serif;
+  font-family: 'Tajawal', sans-serif;
+  background-color:rgb(255, 255, 255) ;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px color( rgb(21, 21, 94));
+}
+   header{
+    background-color: #2F5D8C;
+    border: 2px solid #2F5D8C;
+       height: 70px;
+       box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+   }
+   nav{
+    border: 2px solid  #D8D8D6 ;
+    border-radius:  2px;
+    background-color:  #D8D8D6;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+nav ul{
+    list-style: none;
+    display:flex;
+    font-size: 1.3rem;
+    margin-left: 1100px;
+    gap: 30px;
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#2b3658 ;
+    
+}
+nav ul li a:hover{
+    color: #091831;
+}   
+
+
+
+.services{
+    text-align: center;
+    padding: 40px;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: #012258;
+    height: 340px;
+    font-size: 33px;
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 13px;
+}
+
+.img1{
+margin-right: 500px;
+}
+.past{
+    align-items: center;
+    text-align: center;
+    margin-left: 700px;
+    font-size: 40px;
+    color: #012258;
+
+  font-family: 'Tajawal', sans-serif;
+}
+
+.container {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+
+}
+
+.card {
+  margin: 2%;
+  background: #D8D8D6;;
+  width: 310px;
+  height: 100px;
+  box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  transition: .2s all;
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 30px;
+  border: 3px ;
+  margin-right: 77px;
+  padding: 2%;
+
+}
+
+
+
+
+.card > span {
+
+  margin: auto;
+
+}
+.card  span{ font-size: 20px;
+
+justify-content: center;
+margin-top: 9990px;
+font-family: 'Tajawal', sans-serif;
+
+}
+.container:hover .card {
+  filter: blur(3px);
+  opacity: .5;
+  transform: scale(.98);
+  box-shadow: none;
+}
+
+.container:hover .card:hover {
+  transform: scale(1);
+  filter: blur(0px);
+  opacity: 1;
+  box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
+  background:#D8D8D6(2, 6, 51);
+  color:#0f214f ;
+  font-family: 'Tajawal', sans-serif;
+  
+}
+
+  /* Footer  */
+  *{
+    padding: 0;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Golos+Text&family=Marhey:wght@500&display=swap');
+
+.footer{
+    /* background-color: #0f214f; */
+    
+    background-color: #2F5D8C;
+    display: flex;
+    justify-content: space-around;
+    height: 310px; 
+    margin-top: 200px; 
+}
+
+.subscribe{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 110px;
+    
+}
+.subscribe h2{
+    margin-bottom: 30px;
+    color: rgb(220, 220, 220);
+    font-size: 1.7rem;
+    font-family: 'Tajawal', sans-serif;
+}
+.qoute h6{
+color:  rgb(220, 220, 220);
+font-family: 'Tajawal', sans-serif;
+font-size: 55px;
+
+}
+
+.qoute h1{
+    font-family: 'Tajawal', sans-serif;
+}
+.qoute{
+    margin-top: 50px;
+    color: rgb(220, 220, 220);
+    font-size: 1.2rem;
+    margin-left: 20px;
+}
+.list3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+    font-family: 'Tajawal', sans-serif;
+
+}
+.button2:hover{
+    transform: scale(1.04);
+    transition: .3s;
+
+}
+.footer-part{
+    margin-top: 50px;
+    display: flex;
+    
+}
+.footer-part ul{
+    margin-right: 40px;
+    list-style: none;
+}
+.footer-part ul li a{
+    color: whitesmoke;
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: 'REM', sans-serif;
+    font-family: 'Tajawal', sans-serif;
+}
+
+
+.footer-part li:hover {
+    transform: scale(1.03);
+    color: rgb(220, 220, 220);
+    transition: .2s;
+}
+
+/*  */
+
+.feedback {
+display: flex;
+animation: scroll 10s linear infinite; 
+border: rgb(192, 192, 212) solid 2px;
+width: 1600px;
+}
+
+.feedback-card {
+width: 50vw; 
+height: 220px; 
+background-color: #f0f0f0;
+margin-right: 10px; 
+border: yellow solid 2px
+}
+.scroll-container{
+    width: 800px;
+    border: 2px rgb(148, 7, 7) solid;
+    margin-right: 230px;
+}
+
+@keyframes scroll {
+0% {
+transform: translateX(100%);
+}
+100% {
+transform: translateX(-100%);
+}
+}
+
+

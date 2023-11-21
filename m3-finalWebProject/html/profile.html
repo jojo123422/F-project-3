@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحتي</title>
+    <link rel="stylesheet" href="../css/profile.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body dir="rtl">
+          <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+                    <ul class="menu__box">
+                        <li><a class="menu__item" href="../html/useridea.html"> الرئيسية</a></li>
+                        <li><a class="menu__item" href="../html/create.html">اطرح فكرة </a></li>
+                        <li><a class="menu__item" href="../html/profile.html">صفحتي</a></li>
+                        <li><button id="signout">تسجيل خروج</button></li>
+                    </ul>
+                </div>
+                
+    <div class="profile-container">
+        <!-- Profile Picture & Banner -->
+        <div class="profile-header">
+            <img src="../img/Screenshot_2023-09-27_162803-removebg-preview.png" alt="Profile Image" class="profile-pic">
+            <div class="username">
+            <h1>المستخدم</h1> <!-- add the api later -->
+            </div>
+        </div>
+        
+        <!-- Bio -->
+        <div class="bio">
+            <h2>نبذة عني</h2>
+            <p>...</p>
+        </div>
+
+        <div class="stats">
+            <div class="ranking">
+                <h2>تصنيف الموقع</h2>
+                <p>#3</p>
+            </div>
+        
+            <div class="success-rate">
+                <h2>نسبةالنجاح</h2>
+                <p>72%</p>
+            </div>
+        </div>
+        
+
+        <!-- Achievements & Skills -->
+        <div class="achievements">
+            <h2>الإنجازات</h2>
+            <ul>
+                <li>بيع اغلى فكرة في الموقع سنة 2022</li>
+                <li>افكار اكثر مبيعا شهر يوليو</li>
+            </ul>
+        </div>
+        
+        <!-- Charts Section -->
+        <div class="charts">
+            <h2>نظرة عامة على الأداء</h2>
+            <div style="width: 67%; margin: 0 auto;">
+                <canvas id="ideaSellingChart"></canvas>
+            </div>
+            
+            <p>رسوم بيانية تُظهر مقاييس النجاح، ومجالات الاهتمام، وما إلى ذلك.</p>
+        </div>
+        
+        <!-- Most Valuable Idea Sold -->
+        <div class="valuable-idea">
+            <h2>أكثر فكرة ثمينة تم بيعها</h2>
+            <p>>دمج المنزل الذكي - فكرة غيّرت تمامًا أتمتة المنازل عن طريق..</p>
+        </div>
+        
+        <!-- Past Ideas -->
+        <h2>الأفكار السابقة</h2>
+        <div class="ideas-container">
+            <button class="scroll-button left">&lt;</button>
+            <div class="ideas past-ideas">
+                
+                <div class="idea">
+                    <h3>مبادرة الزراعة الحضرية</h3>
+                    <p>تحويل أسطح المباني في المدن إلى مساحات خضراء إنتاجية...</p>
+                    <span class="status sold">تم البيع</span>
+                </div>
+                <div class="idea">
+                    <h3>عيادات الصحة المتنقلة</h3>
+                    <p>تقديم الرعاية الصحية الأولية في المناطق النائية عبر وحدات متنقلة...</p>
+                    <span class="status unsold">لم يتم البيع</span>
+                </div>
+                <div class="idea">
+                    <h3>إدارة حركة المرور الذكية</h3>
+                    <p>استخدام الذكاء الاصطناعي لتحسين تدفق حركة المرور في المناطق الحضرية...</p>
+                    <span class="status sold">تم البيع</span>
+                </div>
+                <div class="idea">
+                    <h3>عبوات تنقية المياه</h3>
+                    <p>الأجهزة المحمولة توفر الوصول الفوري إلى المياه النظيفة...</p>
+                    <span class="status sold">تم البيع</span>
+                </div>
+                <div class="idea">
+                    <h3>طرق الشحن اللاسلكي</h3>
+                    <p>طرق سريعة تشحن السيارات الكهربائية أثناء قيادتها..</p>
+                    <span class="status sold">تم البيع<ع/span>
+                </div>
+                <div class="idea">
+                    <h3>تجارب السفر الافتراضية</h3>
+                    <p>تقديم تجارب سفر غامرة من راحة المنزل...</p>
+                    <span class="status sold">تم البيع</span>
+                </div>
+                <div class="idea">
+                    <h3>مدربو اللياقة البدنية الشخصيون ذوو الذكاء الاصطناعي</h3>
+                    <p>الذكاء الاصطناعي يرشد المستخدمين خلال التدريبات المخصصة...</p>
+                    <span class="status unsold">لم يتم البيع</span>
+                </div>
+                <div class="idea">
+                    <h3>الزراعة الحضرية الآلية</h3>
+                    <p>مزارع مكتفية ذاتيًا في المناطق الحضرية باستخدام الأتمتة المتقدمة...</p>
+                    <span class="status sold">تم البيع</span>
+                </div>
+            </div>
+            <button class="scroll-button right">&gt;</button>
+        </div>
+
+        <!-- Ongoing Ideas -->
+        <h2>الأفكار الجارية</h2>
+        <div class="ideas-container">
+            <button class="scroll-button left">&lt;</button>
+            <div class="ideas ongoing-ideas">
+                
+                <div class="idea">
+                    <h3>تطبيقات الصحة العقلية المعتمدة على الذكاء الاصطناعي</h3>
+                    <p>بناء نموذج أولي لتطبيق يستخدم الذكاء الاصطناعي لتقديم الدعم في مجال الصحة النفسية...</p>
+                    <span class="status ongoing">عرض قائم</span>
+                </div>
+                <div class="idea">
+                    <h3>تطبيق أسلوب الحياة بدون نفايات</h3>
+                    <p>تطبيق لتوجيه الأفراد حول تبني أسلوب حياة مستدام خالٍ من النفايات...</p>
+                    <span class="status ongoing">عرض قائم</span>
+                </div>
+                <div class="idea">
+                    <h3>الشبكات الاجتماعية اللامركزية</h3>
+                    <p>تصور مستقبل بدون منصات وسائل التواصل الاجتماعي المركزية...</p>
+                    <span class="status ongoing">عرض قائم</span>
+                </div>
+            </div>
+            <button class="scroll-button right">&gt;</button>
+        </div>
+
+        <!-- Contact & Social Links -->
+        <div class="contact">
+            <h2> وسائل التواصل</h2>
+            <p>الأيميل: lamaexample.com</p>
+            <p>LinkedIn: <a href="#">linkedin.com/in/lama</a></p>
+            <p>Twitter: <a href="#">@laideas</a></p>
+        </div>
+    </div>
+
+        <footer class="footer" >
+      
+            <div class="subscribe" >
+                <h2>اشترك في نشرتنا الأن</h2>
+                <input type="name" name="text" class="box1" placeholder="الأسم" style="width: 100%; height: 25px; border-radius: 10px 0px; margin-bottom: 2%;">
+                <input type="email" name="text" class="box2"placeholder="البريد الإلكتروني" style="width: 100%; height: 25px; border-radius: 10px 0px;margin-bottom: 2%;">
+                <button class="button2" style=" border-radius: 10px 0px; font-size: medium; width: 60px; height: 32px;padding: 8px; width: 66px; ">اشترك</button>
+            </div>
+            <div class="qoute" style="margin-top: 88px; color: #ce7d5a;">
+                <h1>فرص تكتمل بها دائرتك</h1>
+                <h2 >مع زَاوِد</h2>
+            </div>
+            <div class="footer-part">
+                <ul class="list1" style="margin-top: 55px;">
+                    <li style=" margin-bottom: 10px;"><a href="">الرئيسية</a></li>
+                    <li style=" margin-bottom: 10px;"><a href="">المزاد</a></li>
+                    <li style=" margin-bottom: 10px;"><a href="./FAQ.HTML">الأسئلة الشائعة</a></li>
+                    <li style=" margin-bottom: 10px;"><a href="./aboutus.html">من نحن؟</a></li>
+                </ul>
+                <ul class="list2">
+                
+            
+                <ul class="list3">
+                    <li style=" margin-bottom: 10px; color:rgb(254, 249, 251);  font-size: 1.1rem; margin-top: 88px;">خلنا نتتواصل !</li>
+                    <li style=" margin-bottom: 10px; color: rgb(220, 220, 220);"> <i class="fa-brands fa-square-twitter fa-2x"></i>
+                    <li style=" margin-bottom: 10px;color: rgb(220, 220, 220);"><i class="fa-brands fa-square-github fa-2x"></i></li>
+                    <li style=" margin-bottom: 10px;color: rgb(220, 220, 220);"><i class="fa-brands fa-square-instagram fa-2x"></i></li>
+                </ul>
+           
+            </div>
+    
+        </footer>
+    
+    <script src="../js/profile.js"></script>
+</body>
+</html>
